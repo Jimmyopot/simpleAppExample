@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>send a text</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <form method="POST" action="/send">
+            <h2>Send a Text</h2>
+            <label for="api_key" class="sr-only">api_key</label>
+            <input type="text" name="api_key" class="form-control" placeholder="api key" required autofocus>
+
+            <label for="api_secret" class="sr-only">api_secret</label>
+            <input type="text" name="api_secret" class="form-control" placeholder="api secret" required>
+
+            <label for="unique_ref" class="sr-only">unique_ref</label>
+            <input type="number" name="unique_ref" class="form-control" placeholder="unique ref" required autofocus>
+
+            <label for="clientId" class="sr-only">clientId</label>
+            <input type="number" name="clientId" class="form-control" placeholder="clientId" required>
+
+            <label for="dlrEndpoint" class="sr-only">dlrEndpoint</label>
+            <input type="text" name="dlrEndpoint" class="form-control" placeholder="dlrEndpoint" required autofocus>
+
+            <label for="productId" class="sr-only">productId</label>
+            <input type="number" name="productId" class="form-control" placeholder="productId" required>
+
+            <label for="msisdn" class="sr-only">msisdn</label>
+            <input type="number" name="msisdn" class="form-control" placeholder="Phone number" required>
+
+            <label for="message" class="sr-only">message</label>
+            <input type="text" name="message" class="form-control" placeholder="Message" required>
+
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Send</button>
+        </form>
+    </div>
+    
+</body>
+</html>
